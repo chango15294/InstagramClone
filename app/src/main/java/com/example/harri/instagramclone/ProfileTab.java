@@ -63,12 +63,12 @@ public class ProfileTab extends Fragment {
             edtProfileBio.setText(parseUser.get("profileBio").toString());
         }
 
-        if(parseUser.get("profileProfession") == null)
+        if(parseUser.get("ProfileProfession") == null)
         {
             edtProfileBio.setText("");
         }else
         {
-            edtProfileBio.setText(parseUser.get("profileProfession").toString());
+            edtProfileBio.setText(parseUser.get("ProfileProfession").toString());
         }
 
         if(parseUser.get("profileHobbies") == null)
@@ -97,7 +97,7 @@ public class ProfileTab extends Fragment {
             {
                 parseUser.put("profileName", edtProfileName.getText()+ "");
                 parseUser.put("profileBio", edtProfileBio.getText()+ "");
-                parseUser.put("profileProfession", edtProfileProfession.getText() + "");
+                parseUser.put("ProfileProfession", edtProfileProfession.getText() + "");
                 parseUser.put("profileHobbies",edtProfileHobbies.getText() + "");
                 parseUser.put("profileFavSport",edtProfilefavSport.getText() + "");
 
